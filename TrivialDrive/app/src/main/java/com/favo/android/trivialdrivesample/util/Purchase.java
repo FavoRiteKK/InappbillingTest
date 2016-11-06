@@ -13,10 +13,13 @@
  * limitations under the License.
  */
 
-package com.example.android.trivialdrivesample.util;
+package com.favo.android.trivialdrivesample.util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Represents an in-app billing purchase.
@@ -62,5 +65,8 @@ public class Purchase {
     public boolean isAutoRenewing() { return mIsAutoRenewing; }
 
     @Override
-    public String toString() { return "PurchaseInfo(type:" + mItemType + "):" + mOriginalJson; }
+    public String toString() {
+        Date purchaseDate = new Date(mPurchaseTime);
+        return "PurchaseInfo(type:" + mItemType + ", purchaseDate=" + purchaseDate + "):" + mOriginalJson;
+    }
 }

@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.example.android.trivialdrivesample.util;
+package com.favo.android.trivialdrivesample.util;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -74,7 +74,7 @@ import java.util.List;
 public class IabHelper {
     // Is debug logging enabled?
     boolean mDebugLog = false;
-    String mDebugTag = "IabHelper";
+    String mDebugTag = "IDK-IabHelper";
 
     // Is setup done?
     boolean mSetupDone = false;
